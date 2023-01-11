@@ -58,7 +58,7 @@ stages:
         arguments: '--no-restore --configuration $(buildConfiguration)'
         projects: '**/*.csproj'
 
-    - task: CotNetCoreCLI@2
+    - task: DotNetCoreCLI@2
       displayName: 'Publish the project - $(buildConfiguration)'
       inputs:
         command: 'publish'
